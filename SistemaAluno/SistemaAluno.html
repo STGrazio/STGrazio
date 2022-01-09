@@ -14,10 +14,11 @@
                 let TelefoneAluno = document.getElementById("TelefoneAluno").value;
                 let NascimentoAluno = document.getElementById("NascimentoAluno").value;
                 let NotaAluno = document.getElementById("NotaAluno").value;
-                let u = {Nome:NomeAluno, Tefeone:TelefoneAluno, Nascimento: NascimentoAluno, Nota: NotaAluno};
+                let u = {NomeAluno, TelefoneAluno, NascimentoAluno, NotaAluno};
                 Alunos[Cadastrados] = u;
-                document.getElementById("AlunosCadastrados").innerHTML += "<br><span>" + "ALUNO "+Cadastrados+": <br>"+ "Nome: "+ NomeAluno + "<br>" + "Telefone: "+ TelefoneAluno + "<br>" + "Nascimento: "+ NascimentoAluno + "<br>" + "Nota: "+ NotaAluno + "<br></span>";
+                document.getElementById("AlunosCadastrados").innerHTML += "<br><span>" + "ALUNO "+ Cadastrados +": <br>"+ "Nome: "+ NomeAluno + "<br>" + "Telefone: "+ TelefoneAluno + "<br>" + "Nascimento: "+ NascimentoAluno + "<br>" + "Nota: "+ NotaAluno + "<br></span>";
                 Cadastrados++;
+                alert("Aluno cadastrado com sucesso!")
             }
         </script>
   
@@ -33,17 +34,17 @@
         <br>
         <div>
             <span>Telefone:</span>
-            <input id="TelefoneAluno" placeholder="digite o número de telefone" >
+            <input id="TelefoneAluno" placeholder="(xx) xxxxx-xxxx" >
         </div>
         <br>
         <div>
             <span>Data de nascimento:</span>
-            <input id="NascimentoAluno" placeholder="digite a data de nascimento">
+            <input id="NascimentoAluno" placeholder="dd/mm/aaaa">
         </div>
         <br>
         <div>
             <span>Nota final do curso:</span>
-            <input id="NotaAluno" placeholder="digite a nota final">
+            <input id="NotaAluno" placeholder="xx.x">
         </div>
         <br>
         <div>
